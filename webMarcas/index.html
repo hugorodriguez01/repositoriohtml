@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUSANPAL - Renting de Coches</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+     <header>
+        <a href="index.html"><img src="./img/logo.png" alt="logo" class="fotologo"></a>
+            <ul class="navbar">
+                <li><a href="./proyectos/renting.html">Renting</a></li>
+                <li><a href="./proyectos/sedes.html">sedes</a></li>
+                <li><a href="./proyectos/fundadores.html">Fundadores</a></li>
+                <li><a href="./proyectos/contacto.html">Contacto</a></li>
+            </ul>
+        </header>
+         <main class="indexrenting">
+    <div class="contenedorrazones">
+        <h1 class="h1contenedor">¿Por Qué Renting?<br>¿Por Qué HUSANPAL</h1>
+        <p class="pcontenedor"><b>0 Sorpresas, 0 Estrés:</b> En HUSANPAL, tu cuota incluye seguro a todo riesgo, mantenimiento, averías e impuestos. Olvídate de las facturas del taller o de renovar el seguro; nosotros nos ocupamos, tú solo <br><br>
+            <b>Liquidez Total:</b> No des entradas astronómicas ni te endeudes con un préstamo. Mantén tus ahorros en el banco para lo que de verdad importa mientras disfrutas de un coche nuevo desde el primer día. <br><br>
+           <b>Flexibilidad y Vanguardia:</b>  La tecnología cambia rápido (híbridos, eléctricos, etiquetas ambientales). Con nosotros, no te "atas" a un coche viejo; cuando acaba tu contrato, saltas al modelo más moderno del mercado. <br><br>
+           <b> Ventajas Fiscales Reales:</b> Si eres autónomo o empresa, en HUSANPAL te ayudamos a deducir hasta el 100% de la cuota e IVA. Menos impuestos, mejor imagen corporativa.</p>
+    </div>
+
+    <div class="image">
+        <img src="./img/logo.png" alt="Programación" class="imgindex">
+    </div>
+</main>
+<section class="seccion-slogan reveal">
+    <div class="contenedor-slogan">
+        <h2 class="texto-slogan">"HUSANPAL: Conduce el mañana, nosotros nos ocupamos del resto."</h2>
+    </div>
+</section>
+
+<script>
+    window.addEventListener('scroll', function() {
+        var reveals = document.querySelectorAll('.reveal');
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var revealTop = reveals[i].getBoundingClientRect().top;
+            var revealPoint = 150; // Distancia para que aparezca
+
+            if (revealTop < windowHeight - revealPoint) {
+                reveals[i].classList.add('active');
+            }
+        }
+    });
+</script>
+</body>
+</html>
